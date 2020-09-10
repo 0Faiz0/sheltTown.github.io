@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.65rem;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #121212;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.navbar{
+    background: #fff;
+    height: 50px;
+    width: 100%;
+}
+.sec-1{
+    padding-top: 50px;
+}
+
+#slide .carousel-item img{
+    object-fit: cover;
+}
+
+#slide .carousel-caption button{
+    width: 85px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: 0.1s ease;
+}
+
+#slide .carousel-control-next{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: block;
+    margin: auto 10px;
+}
+
+#slide .carousel-control-next-icon{
+    margin: 15px
+}
+
+#slide .carousel-control-prev{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: block;
+    margin: auto 10px;
+}
+
+#slide .carousel-control-prev-icon{
+    margin: 15px
+}
+
+#slide .carousel-caption button:hover{
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    border: 2px solid black;
+}
+
+/*-----------------------------SECTION-2-LEFT-COLUMN----------------------------*/
+
+#left-col{
+    padding-top: 5%;
+}
+
+#left-col .info h1{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+#left-col .info p{
+    font-size: 16px;
+    line-height: 0.1;
+    letter-spacing: 0.4px;
+    color: #222;
+    opacity: 0.54;
+}
+
+#left-col .info .row-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+#left-col .info .row-flex .title{
+    flex: 1;
+}
+
+#left-col .info .row-flex .rate-box{
+    width: 80px;
+    height: 50px;
+}
+#left-col .info .row-flex .rate-box h4{
+    text-align: center;
+    height: 30px;
+    background-color: orange;
+}
+
+#left-col .info .row-flex .rate-box h4 i{
+    font-size: 20px;
+}
+
+#left-col .info .row-flex .rate-box p{
+    font-size: smaller;
+    text-align: center;
+    height: 20px;
+}
+
+#left-col .info .member-pre-box{
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    width: 180px;
+    margin-top: 5%;
+}
+
+#left-col .info .member-pre-box i{
+    margin-left: 5px;
+    color: #fff;
+}
+
+#left-col .info .member-pre-box .pre-logo{
+    background-color: #332b2b;
+    margin-left: 5px;
+}
+
+#left-col .info .member-pre-box .pre-text{
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+#left-col .info .dialouge-box{
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    width: 350px;
+    margin-top: 3%;
+}
+
+#left-col .info .dialouge-box i{
+    margin-left: 5px;
+    color: red;
+}
+
+#left-col .info .dialouge-box .dia-text{
+    margin-left: 10px;
+    color: red;
+}
+
+/*-----------------------------SECTION-2-DESCRIPTION----------------------------*/
+
+#more {display: none;}
+
+#left-col .description{
+    margin-top: 5%;
+}
+
+#left-col .description h1{
+    font-weight: 500;
+    line-height: 0.7em;
+}
+
+#left-col .description button{
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: large;
+    font-weight: 500;
+    color: #ee2e2a;
+}
+
+/*-----------------------------SECTION-2-AMENITIES----------------------------*/
+
+#left-col .amenities label{
+    outline: none;
+    border: none;
+    margin-top: 2%;
+    color: #ee2e2a;
+    font-weight: 500;
+}
+
+
+#left-col .amenities{
+    margin-top: 5%;
+}
+
+#left-col .amenities h1{
+    font-weight: 500;
+    line-height: 0.7em;
+}
+
+#left-col .amenities .row #col-1-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#left-col .amenities .row #col-1-flex .space{
+    margin: 10% 0;
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+  
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+  
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Show more';
+}
+  
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+}
+  
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+}
+
+/*-----------------------------RIGHT-COLUMN----------------------------*/
+
+#right-col{
+    padding-top: 5%;
+}
+
+#right-col .card{
+    height: 100vh;
+    margin-bottom: 5%;
+}
+
+#right-col .card .login-offer{
+    width: 100%;
+    height: 5%;
+    background: rgb(181,28,28);
+    background: linear-gradient(90deg, rgba(181,28,28,1) 0%, rgba(181,28,28,1) 0%, rgba(32,5,5,1) 0%, rgba(194,17,19,1) 87%, rgba(204,3,3,1) 100%,
+     rgba(153,80,90,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%); 
+}
+
+#right-col .card .login-offer p{
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    color: #fff;
+    font-weight: 400;
+}
+
+#right-col .card .login-offer p button{
+    margin-left: 10px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 500;
+    color: #fff;
+    background: transparent;
+}
+
+#right-col .card .price{
+    height: 10%;
+}
+
+#right-col .card .price p{
+    display: block;
+    margin: 10px 10px;
+    font-size: x-large;
+    font-weight: 500;
+    line-height: 0.3em;
+}
+
+#right-col .card .price p .real-price{
+    text-decoration: line-through;
+    font-size: large;
+    font-weight: 400;
+}
+
+#right-col .card .price p .offer{
+    font-size: large;
+    font-weight: 500;
+    color: orangered;
+}
+
+#right-col .card .price p .para-2nd{
+    font-size: small;
+    font-weight: 400;
+}
+
+#right-col .card .box-1 {
+    width: 80%;
+    height: 5%;
+    background-color: palegoldenrod;
+    display: block;
+    margin: 0 auto;
+}
+
+#right-col .card .box-1 p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+#right-col .card .box-1 p .vertical-line{
+    font-size: large;
+}
+
+#right-col .card .box-2 {
+    width: 80%;
+    height: 5%;
+    background-color: palegoldenrod;
+    display: block;
+    margin: 5% auto;
+}
+
+#right-col .card .box-2 p{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#right-col .card .box-2 p span{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#right-col .card .box-3 {
+    width: 80%;
+    height: 10%;
+    display: block;
+    margin: 5% auto;
+}
+
+#right-col .card .box-3 p{
+    text-align: center;
+    font-size: large;
+    letter-spacing: 0.1em;
+}
+
+#right-col .card .box-3 button{
+    margin: 0px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    outline: none;
+}
+
+#right-col .card .box-4 {
+    width: 80%;
+    height: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+#right-col .card .box-4 p{
+    margin-left: 15px;
+}
+
+#right-col .card .box-4 p span{
+    float: right;
+    letter-spacing: 0.1em;
+    font-size: large;
+    margin-right: 15px;
+}
+
+#right-col .card .box-5 {
+    width: 80%;
+    background-color: palegoldenrod;
+    display: block;
+    margin: 0 auto;
+    border: 1px dotted grey;
+}
+
+#right-col .card .box-5 p{
+    margin-top: 5px;
+    margin-left: 20px;
+    line-height: 0.90em;
+}
+
+#right-col .card .box-5 p span{
+    float: right;
+    margin-right: 15px;
+}
+
+#right-col .card .box-6 {
+    width: 100%;
+    display: block;
+    margin: 3% auto;
+}
+
+#right-col .card .box-6 p{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#right-col .card .box-6 p span{
+    float: right;
+    margin-right: 15px;
+}
+
+#right-col .card .box-6 p .tax{
+    font-size: medium;
+    float: left;
+    font-weight: 300;
+}
+
+.card .but{
+    width: 80%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: 1px solid black;
+    background-color: orangered;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    font-size: large;
+    transition: 0.2s ease;
+}
+
+.card .but:hover{
+    font-size: larger;
+    font-weight: 700;
+}
+
+.card .cancel p{
+    text-align: center;
+    margin-top: 15px;
+    font-size: large;
+    color: orange;
+}
+
+
+
+
+/*-----------------------------FOOTER----------------------------*/
+
+.footer{
+	background: #303036;
+	color: #d3d3d3;
+	height: 300px;
+	position: relative;
+}
+
+.footer .row{
+    padding-top: 25px;
+}
+
+.footer .footer-bottom{
+	background: #343a40;
+	color: #686868;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 10px;
+
+}
+
+.footer .row .col-sm-6 hr{
+    border: 1px solid #fff;
+    width: 25%;
+}
+
+.footer .row .col-sm-3 hr{
+    border: 1px solid #fff;
+    width: 30%;
+}
+
+
+
+.footer .row .col-sm-3 p{
+    line-height: 0.7em;
+}
+
+
+
+
+@media(max-width: 600px){
+    #left-col .amenities .row #col-1-flex{
+        flex-direction: row;
+    }
+
+    #left-col .amenities .row #col-1-flex .space{
+        margin: 3% 2%;
+    }
+
+    #left-col .amenities label{
+        margin-left: 10px;
+        font-size: large;
+    }
+
+    .footer{
+        height: 100vh;
+    }
+
+    #right-col .card .box-1{
+        width: 100%;
+    }
+
+    #right-col .card .box-2{
+        width: 100%;
+    }
+
+    #right-col .card .box-3 {
+        width: 100%;
+    }
+    #right-col .card .box-3 p{
+        width: 100%;
+        font-size: medium;
+    }
+
+    #right-col .card .box-4 {
+        width: 100%;
+    }
+
+    #right-col .card .box-4 p{
+        width: 100%;
+        font-size: small;
+        margin-left: 20px;
+    }
+
+    #right-col .card .box-5 p{
+        padding-top: 5px;
+        font-size: small;
+        font-weight: 500;
+        line-height: 0.95em;
+    }
+
+    #right-col .card .box-4 p span{
+        margin-right: 35px;
+    }
+
+    #left-col .amenities .row #col-1-flex .space{
+        margin: 5% 2%;
+        font-size: small;
+    }
+
+
+
+
+}
